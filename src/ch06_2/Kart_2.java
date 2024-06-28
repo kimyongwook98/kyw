@@ -1,6 +1,6 @@
 package ch06_2;
 
-public class Kart {
+public class Kart_2 {
 	
 	private int booster;
 	private int speed;
@@ -85,17 +85,15 @@ public class Kart {
 	}
 	
 	
-	Kart() {}
-	Kart(String name, String color) {
+	Kart_2() {}
+	Kart_2(String name, String color) {
 		this.name = name;
 		this.color = color;
 	}
 	
-	public void speedUp () {
+	public void speedUp() {
 		speed += 40;
-		if (speed > highestSpeed) {
-			speed = highestSpeed;
-		}
+		checkSpeed();
 		System.out.println(name+"("+ color +")"+ "speedUp"+ "속도:" + speed+ "부스터 : " + booster + "개");
 	}
 	
@@ -111,16 +109,13 @@ public class Kart {
 	
 	
 	public void useBooster() {
-		if (booster == 1 && speed < 50) {
+		if (booster == 1) {
 			booster--;
 			speed += useBoosterSpeed;
-			System.out.println(name+"("+ color +")"+ "speedDown"+ "속도:" + speed + "부스터 : " + booster + "개");
-		} else if (booster == 1 && speed >= 50) {
-			booster--;
-			speed = 150;
-			System.out.println(name+"("+ color +")"+ "speedDown"+ "속도:" + speed + "부스터 : " + booster + "개");
+			checkSpeed();
+			System.out.println(name+"("+ color +")"+ "useBooster"+ "속도:" + speed + "부스터 : " + booster + "개");
 		} else if (booster == 0) {
-			System.out.println(name+"("+ color +")"+ "speedDown"+ "속도:" + speed + "부스터 : " + booster + "개 | 사용 가능한 부스터 없음");
+			System.out.println(name+"("+ color +")"+ "useBooster"+ "속도:" + speed + "부스터 : " + booster + "개 | 사용 가능한 부스터 없음");
 		} 
 	}
 	
@@ -128,12 +123,8 @@ public class Kart {
 		
 	public void speedDown() {
 		speed -= speedDown ;
-		if (speed < 0) {
-			speed = 0;
-			System.out.println(name+"("+ color +")"+ "speedDown"+ "속도:" + speed + "부스터 : " + booster + "개");
-		} else {
-			System.out.println(name+"("+ color +")"+ "speedDown"+ "속도:" + speed + "부스터 : " + booster + "개");
-		}
+		checkSpeed();
+		System.out.println(name+"("+ color +")"+ "speedDown"+ "속도:" + speed+ "부스터 : " + booster + "개");
 		
 	}
 
@@ -150,6 +141,12 @@ public class Kart {
 		System.out.println("부스터 최대 보유 개수 : " + boosterLimit );
 	}
 	
-	
+	public void checkSpeed() {
+		if (speed >= 150) {
+			speed = 150;
+		} else if (speed <= 0) {
+			speed = 0;
+		}
+	}
 }
 

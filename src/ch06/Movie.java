@@ -8,6 +8,9 @@ public class Movie {
 	int runningTime;
 	
 	
+
+
+
 	public void printInfo() {
 		System.out.println("title=" + title);
 		System.out.println("category=" + category);
