@@ -19,7 +19,7 @@ public class MusicChartSplit {
 
 	
 	public void printMusicChartSplit() {
-		for (int i = 0; i < songArray.length; i++) { 
+		for(int i = 0; i < songArray.length; i++) {
 			songArray[i].printInfo();
 		}
 	}
