@@ -5,16 +5,10 @@ public class Actor {
 	private String sex;
 	private String birthdate;
 	private String nationality;
-	private Actor[] actorArray;
 	
 	
-	public Actor[] getActorArray() {
-		return actorArray;
-	}
 	
-	public void setActorArray(Actor[] actorArray) {
-		this.actorArray = actorArray;
-	}
+
 	
 	public String getName() {
 		return name;
