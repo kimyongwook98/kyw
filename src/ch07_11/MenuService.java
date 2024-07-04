@@ -1,5 +1,5 @@
 package ch07_11;
-
+/*
 public class MenuService {
 
 	Ade ade;
@@ -21,33 +21,39 @@ public class MenuService {
     	Coffe.makeCoffee
     }
     
+    */
     
-    
-    
-    
-/*
+
 public class MenuService {
-	String name;
-	int price;
-	String wd;
-	Menu[] menuArray;
+	static Ade ade;
+	static Coffee coffee;
 	
 	
-	public MenuService(String name, int price, String wd) {
-		this.name = name;
+
+/*	
+ * String menu;
+		int price;
+		String wd;
+		String jr;
+ * 
+ * public MenuService(String menu, int price) {
+		this.menu = menu;
 		this.price = price;
-		this.wd = wd;
-	}
 	
-	public static void  makeCoffee(String name, int price, String wd) {
-        
-        System.out.println( name + price + " 원두: " + wd);
+	} */
+
+
+	
+	public static Coffee makeCoffee(String menu, int price, String wd) {
+		
+		return new Coffee(menu, price, wd);
+		
       
     }
 
-    public static void  makeAde(String name, int price, String wd) {
+    public static Ade makeAde(String menu, int price, String jr) {
        
-        System.out.println(name + price + " 재료: " + wd);
+       return new Ade(menu, price, jr);
         
     }
-}*/
+}

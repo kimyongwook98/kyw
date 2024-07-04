@@ -9,7 +9,7 @@ public class Ade extends Menu {
 		this.jr = jr;
 	}
 	
-	public void makeAde() {
+	public void printInfo() {
 		System.out.println("메뉴 : " + menu + " | 가격 : " + price + " | 재료 : " + jr + "\n");
 	}
 }

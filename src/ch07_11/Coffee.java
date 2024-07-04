@@ -9,7 +9,19 @@ public class Coffee extends Menu {
 		this.wd = wd;
 	}
 	
-	public void makeCoffee() {
-		System.out.println("메뉴 : " + menu + " | 가격 : " + price + " | 재료 : " + wd + "\n");
+	public String getWd() {
+		return wd;
 	}
+
+	public void setWd(String wd) {
+		this.wd = wd;
+	}
+
+	@Override
+	public void printInfo() {
+		// TODO Auto-generated method stub
+		super.printInfo();
+	}
+
+	
 }

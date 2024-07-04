@@ -3,7 +3,6 @@ package ch07_11;
 public class Menu {
 	String menu;
 	int price;
-	Menu[] menuArray;
 
 	public String getMenu() {
 		return menu;
@@ -21,12 +20,13 @@ public class Menu {
 		this.price = price;
 	}
 
-
-
 	public Menu(String menu, int price) {
 		this.menu = menu;
 		this.price = price;
+	
 	}
+
+
 	
 	public void printInfo() {
 		System.out.println("메뉴=" + menu + "가격=" + price);
