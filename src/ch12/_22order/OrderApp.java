@@ -17,21 +17,21 @@ public class OrderApp {
 		order1.printOrder();
 		
 		
-		// List<Menu> menuList2 = new ArrayList<Menu>();
-		// menuList2.add(new Coffee("아메리카노", 3000, "에티오피아 예가체프"));
+		List<Menu> menuList2 = new ArrayList<Menu>();
+		menuList2.add(new Coffee("아메리카노", 3000, "에티오피아 예가체프"));
 		
-		// Order order2 = new Order(menuList2);
-		// order2.printOrder();
+		Order order2 = new Order(menuList2);
+		order2.printOrder();
 		
-		// List<Menu> menuList3 = new ArrayList<Menu>();
-		// menuList3.add(new Ade("한라봉에이드", 4000, "한라봉, 시럽"));
-		// menuList3.add(new Ade("레몬에이드", 4000, "레몬, 시럽"));
+		List<Menu> menuList3 = new ArrayList<Menu>();
+		menuList3.add(new Ade("한라봉에이드", 4000, "한라봉, 시럽"));
+		 menuList3.add(new Ade("레몬에이드", 4000, "레몬, 시럽"));
 		
-		// Order order3 = new Order(menuList3);
-		// order3.printOrder();
+		Order order3 = new Order(menuList3);
+		order3.printOrder();
 	
 	
-		// Order.printSummary();
+		Order.printSummary();
 	}
 }
 

@@ -1,5 +1,5 @@
 package ch12._22order;
-
+import java.text.NumberFormat;
 public class Menu {
 	String name;
 	int price;
@@ -23,6 +23,9 @@ public class Menu {
 	}
 	
 	public void printInfo() {
-		System.out.println("메뉴 : " + name + " | 가격 : " + price + "\n");
+		System.out.println("메뉴 : " + name + " | 가격 : " + formatCurrency(price) + "\n");
 	}
+	protected String formatCurrency(int amount) {
+        return NumberFormat.getNumberInstance().format(amount);
+    }
 }

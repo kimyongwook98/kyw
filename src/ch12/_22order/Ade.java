@@ -17,6 +17,6 @@ public class Ade extends Menu{
 	}
 	
 	public void printInfo() {
-		System.out.println("메뉴 : " + name + " | 가격 : " + price + " | 재료 : " + jr + "\n");
+		System.out.println("메뉴 : " + name + " | 가격 : " + formatCurrency(price) + " | 재료 : " + jr + "\n");
 	}
 }

@@ -17,6 +17,6 @@ public class Coffee extends Menu{
 	}
 	
 	public void printInfo() {
-		System.out.println("메뉴 : " + name + " | 가격 : " + price + " | 원두 : " + wd + "\n");
+		System.out.println("메뉴 : " + name + " | 가격 : " + formatCurrency(price) + " | 원두 : " + wd + "\n");
 	}
 }
