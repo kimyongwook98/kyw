@@ -29,9 +29,9 @@ public class PersonApp {
 		for (String key: personMap2.keySet()) {
 			Person value = personMap2.get(key);
 			if (key.contains("s")) 
-			System.out.println("[학생]:" + key + ", Value:" + value);	
+			System.out.println("[학생]:"  + value);	
 			else
-			System.out.println("[교수]:" + key + ", Value:" + value);	
+			System.out.println("[교수]:" + value);	
 		}
 
 	}

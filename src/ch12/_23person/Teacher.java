@@ -13,4 +13,10 @@ public class Teacher extends Person {
 	public void printInfo() {
 		System.out.println("이름=" + getName() + "나이=" + getAge() + "과목=" + subject);
 	}
+	
+	
+	@Override
+    public String toString() {
+        return "이름=" + getName() + " 나이=" + getAge() + " 과목=" + subject;
+    }
 }

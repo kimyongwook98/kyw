@@ -56,4 +56,9 @@ public class Person {
 	public void printInfo() {
 		System.out.println("이름=" + name + "나이=" + age);
 	}
+	
+	   @Override
+	    public String toString() {
+	        return "이름=" + name + " 나이=" + age;
+	    }
 }

@@ -39,7 +39,7 @@ public class BookApp {
 		System.out.println("\n==printBookByBetweenPrice()==");
 		int betweenMinPrice = 5000;
 		int betweenMaxPrice = 20000;
-		bs.printBookByMaxPrice(betweenMinPrice,betweenMaxPrice);
+		bs.printBookByBetweenPrice(betweenMinPrice,betweenMaxPrice);
 		
 	}
 }

@@ -21,4 +21,9 @@ public class Student extends Person {
 	public void printInfo() {
 		System.out.println("이름=" + getName() + "나이=" + getAge() + "학번=" + studentId);
 	}
+	
+    @Override
+    public String toString() {
+        return "이름=" + getName() + " 나이=" + getAge() + " 학번=" + studentId;
+    }
 }
